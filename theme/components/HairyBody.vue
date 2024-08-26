@@ -12,7 +12,7 @@ withDefaults(
 <template>
   <div class="min-h-49vh relative z-5">
     <div class="mx-auto container flex z-1 relative">
-      <div class="relative flex-1 pt-2 main">
+      <div class="relative flex-1 pt-2 main min-w-0">
         <slot v-if="$slots.default" />
         <HairyComment v-if="comment" />
       </div>
