@@ -14,7 +14,9 @@ const router = useRouter()
 const route = useRoute()
 
 const categories = computed(() => route.params.its as string)
+
 const paths = computed(() => categories.value.split('/').filter(Boolean))
+
 const current = useCategory(paths)
 const posts = useCategoryPost(paths)
 
@@ -26,7 +28,8 @@ function getBreadcrumbPath(index: number) {
 }
 
 function displayCategory(key: string) {
-  router.push({ path: `/categories/${[...paths.value, key].join('/')}` })
+  const paths = categories.value.split('/').filter(Boolean) // [Notes, Client]
+  router.push({ path: `/categories/${[...paths, key].join('/')}` })
 }
 </script>
 
