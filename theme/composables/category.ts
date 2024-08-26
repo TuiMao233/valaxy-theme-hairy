@@ -8,9 +8,9 @@ import { isEqual } from 'lodash-es'
 export function useCategory(categories: MaybeRef<string[]>) {
   const all = useCategories()
 
-  unref(categories)
-  // [BBB]
   return computed(() => {
+    if (!unref(categories).length)
+      return {} as Partial<CategoryList>
     let parent: PostFrontMatter & Partial<CategoryList> = all.value as any
     for (const category of unref(categories)) {
       const children = (parent.children || new Map([]))
