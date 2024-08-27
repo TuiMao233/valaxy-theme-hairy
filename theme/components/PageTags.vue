@@ -26,7 +26,7 @@ function displayTag(tag: string) {
         p="1"
         @click="displayTag(key.toString())"
       >
-        {{ $t(key, {}, { missingWarn: false }) }}
+        {{ key ? $t(key, {}, { missingWarn: false }) : '' }}
       </a>
     </div>
   </div>

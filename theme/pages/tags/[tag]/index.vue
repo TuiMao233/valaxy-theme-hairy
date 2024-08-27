@@ -17,7 +17,7 @@ const posts = computed<any[]>(() =>
       首页
     </HairyBreadcrumbItem>
     <HairyBreadcrumbItem>
-      {{ $t(tag, {}, { missingWarn: false }) }}
+      {{ tag ? $t(tag, {}, { missingWarn: false }) : '' }}
     </HairyBreadcrumbItem>
   </HairyBreadcrumb>
   <ElTimeline>

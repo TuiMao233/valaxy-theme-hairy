@@ -62,7 +62,6 @@ declare module 'vue-router/auto-routes' {
     '/posts/music/theory/4-spectrum': RouteRecordInfo<'/posts/music/theory/4-spectrum', '/posts/music/theory/4-spectrum', Record<never, never>, Record<never, never>>,
     '/posts/music/theory/5-fingerboard': RouteRecordInfo<'/posts/music/theory/5-fingerboard', '/posts/music/theory/5-fingerboard', Record<never, never>, Record<never, never>>,
     '/posts/test': RouteRecordInfo<'/posts/test', '/posts/test', Record<never, never>, Record<never, never>>,
-    '/posts/test2': RouteRecordInfo<'/posts/test2', '/posts/test2', Record<never, never>, Record<never, never>>,
     '/posts/theme/': RouteRecordInfo<'/posts/theme/', '/posts/theme', Record<never, never>, Record<never, never>>,
     '/posts/theme/step-1': RouteRecordInfo<'/posts/theme/step-1', '/posts/theme/step-1', Record<never, never>, Record<never, never>>,
     '/posts/theme/step-2': RouteRecordInfo<'/posts/theme/step-2', '/posts/theme/step-2', Record<never, never>, Record<never, never>>,
