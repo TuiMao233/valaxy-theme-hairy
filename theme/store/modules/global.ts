@@ -1,7 +1,8 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
+import { withGlobalPinia } from '../../utils'
 
-export const useGlobalStore = defineStore('global', () => {
+const _useGlobalStore = defineStore('global', () => {
   const headerRef = ref<HTMLDivElement>()
   const showDrawer = ref(false)
 
@@ -10,3 +11,5 @@ export const useGlobalStore = defineStore('global', () => {
     showDrawer,
   }
 })
+
+export const useGlobalStore = withGlobalPinia(_useGlobalStore)
